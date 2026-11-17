@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Gazette — L'Affiné</title>
+  <meta name="description" content="치즈와 시간에 관한 기록, La Gazette d'Affiné.">
+  <meta name="theme-color" content="#FAF4E8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-journal">
+
+<a class="sr-only" href="#content">본문 바로가기</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__left">Maison de Fromage · Savoie, depuis 1887</p>
+      <p class="topbar__center"><span class="dot" aria-hidden="true"></span>Grand Opening — le 8, novembre</p>
+      <div class="lang" role="group" aria-label="언어 선택">
+        <button type="button" class="is-active" data-lang="kr">KR</button><span aria-hidden="true">/</span><button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <div class="masthead__meta">
+        <p class="eyebrow">Édition d'hiver</p>
+        <p class="it">Nº 139 —<span data-today>2026.11.16</span></p>
+      </div>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné — savoie · depuis 1887" width="309" height="107"></a>
+      <div class="masthead__right">
+        <p class="eyebrow">Aujourd'hui</p>
+        <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="주 메뉴">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__mini-logo" href="index.html" tabindex="-1" aria-hidden="true"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="products.html"><span class="nav__en">Products</span><span class="nav__fr">Les Fromages</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html"><span class="nav__en">About us</span><span class="nav__fr">La Maison</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="shop.html"><span class="nav__en">Shop info</span><span class="nav__fr">La Boutique</span></a></li>
+          <li class="nav__item"><a class="nav__link is-current" aria-current="page" href="journal.html"><span class="nav__en">Journal</span><span class="nav__fr">La Gazette</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="news.html"><span class="nav__en">News</span><span class="nav__fr">Avis</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html"><span class="nav__en">Contact</span><span class="nav__fr">Correspondance</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mbar">
+    <div class="container mbar__inner">
+      <p class="mbar__meta">Nº 139<span> — <span data-today>2026.11.16</span></span></p>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné" width="309" height="107"></a>
+      <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <p class="eyebrow" style="margin-bottom:18px">Sommaire</p>
+    <ul class="drawer__list">
+      <li><a href="products.html"><span class="num">I.</span><span class="en">Products</span><span class="fr">Les Fromages</span></a></li>
+          <li><a href="about.html"><span class="num">II.</span><span class="en">About us</span><span class="fr">La Maison</span></a></li>
+          <li><a href="shop.html"><span class="num">III.</span><span class="en">Shop info</span><span class="fr">La Boutique</span></a></li>
+          <li><a href="journal.html" class="is-current"><span class="num">IV.</span><span class="en">Journal</span><span class="fr">La Gazette</span></a></li>
+          <li><a href="news.html"><span class="num">V.</span><span class="en">News</span><span class="fr">Avis</span></a></li>
+          <li><a href="contact.html"><span class="num">VI.</span><span class="en">Contact</span><span class="fr">Correspondance</span></a></li>
+    </ul>
+    <div class="drawer__foot">
+      <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      <p class="eyebrow">Savoie · depuis 1887</p>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumb reveal" aria-label="breadcrumb"><a href="index.html">Accueil</a><span class="sep">/</span><span>La Gazette</span></nav>
+        <p class="eyebrow eyebrow--red reveal" style="--d:.05s">Nº IV — La Gazette</p>
+        <h1 class="display h-lg split-words">La Gazette d'Affiné</h1>
+        <p class="sub-kr reveal" style="--d:.3s">치즈와 시간에 관한 기록</p>
+      </div>
+      <div class="page-hero__art reveal reveal--right" style="--d:.2s"><img src="img/cheese-comte.webp" alt="치즈 조각 세밀화" width="800" height="480"></div>
+    </div>
+  </section>
+
+  <section class="container" style="padding-bottom:var(--section)">
+    <div class="edition-bar reveal">
+      <span>Édition Nº 139</span>
+      <span class="it">Chroniques de la cave — <span class="kr" style="font-family:var(--kr);font-style:normal">2026년 11월호</span></span>
+      <span>Gratuit</span>
+    </div>
+    <div class="une">
+      <article>
+        <p class="eyebrow eyebrow--red reveal">À la une · Histoire</p>
+        <h2 class="split-words">치즈를 뒤집는 손,<br>숙성고에서 보내는 하루</h2>
+        <p class="it-sub reveal">Une journée dans la cave d'affinage</p>
+        <figure>
+          <div class="frame frame--thick reveal-mask"><div class="photo"><img src="img/cave-aisle.jpg" alt="벽돌 아치 아래 끝없이 늘어선 치즈 선반" width="1200" height="1600"></div></div>
+          <figcaption class="caption reveal"><span>Planche V. — Le coffret, dernier geste de l'affineur</span></figcaption>
+        </figure>
+        <p class="lead reveal">숙성고의 하루는 해가 뜨기 전에 시작됩니다. 장인은 선반 가장 아래 칸부터 휠을 하나씩 꺼내 소금물로 닦고, 뒤집어 다시 올려놓습니다. 같은 동작을 수백 번 반복하는 동안 손 끝은 치즈마다 다른 단단함과 온도를 읽어냅니다.<br>
+        작은 망치로 휠을 두드려 속의 소리를 듣는 것도 이 일의 일부입니다. 맑게 울리면 숙성이 고르게 진행되고 있다는 뜻이고, 둔하게 울리면 다시 시간을 두고 지켜봐야 합니다.<br>
+        그렇게 고른 치즈만이 문장이 찍힌 나무 상자에 담깁니다.</p>
+        <a class="link-it reveal" href="#">Lire la suite <span class="arrow">→</span></a>
+      </article>
+      <aside class="recipe frame--thick reveal reveal--right" style="border:4px solid var(--line-soft)">
+        <p class="eyebrow eyebrow--red">Recette de la semaine</p>
+        <h3 class="display">Tartiflette</h3>
+        <p class="sub-kr" style="font-size:14px">사보이의 겨울 식탁</p>
+        <img src="img/cheese-reblochon.webp" alt="Reblochon 세밀화" loading="lazy">
+        <p class="eyebrow">Ingrédients · 4인분</p>
+        <dl class="specs">
+          <div class="spec"><dt>Reblochon</dt><span class="lead-dots"></span><dd>1개</dd></div>
+          <div class="spec"><dt>감자</dt><span class="lead-dots"></span><dd>800g</dd></div>
+          <div class="spec"><dt>베이컨</dt><span class="lead-dots"></span><dd>200g</dd></div>
+          <div class="spec"><dt>양파</dt><span class="lead-dots"></span><dd>1개</dd></div>
+          <div class="spec"><dt>화이트 와인</dt><span class="lead-dots"></span><dd>100ml</dd></div>
+        </dl>
+        <p class="eyebrow">Préparation</p>
+        <ol>
+          <li>감자를 삶아 썰고, 베이컨과 양파를 볶습니다.</li>
+          <li>그릇에 담고 화이트 와인을 두릅니다.</li>
+          <li>반으로 가른 Reblochon을 껍질째 올려 오븐에서 굽습니다.</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="container">
+      <div class="sec-head sec-head--row">
+        <div>
+          <p class="eyebrow reveal">Derniers articles</p>
+          <h2 class="display h-md split-words">Les Chroniques</h2>
+          <p class="sub-kr reveal" style="font-size:15px;margin-top:8px">최근 기사</p>
+        </div>
+        <div class="chips reveal" role="group" aria-label="기사 분류" data-chips>
+          <button class="chip is-active" type="button" data-filter="all">전체</button>
+          <button class="chip" type="button" data-filter="recette">Recette 레시피</button>
+          <button class="chip" type="button" data-filter="accord">Accord 페어링</button>
+          <button class="chip" type="button" data-filter="histoire">Histoire 이야기</button>
+        </div>
+      </div>
+      <div class="articles" data-articles>
+        <article class="article is-first reveal" data-cat="accord">
+          <div class="article__img"><img src="img/cheese-beaufort.webp" alt="" loading="lazy"></div>
+          <p class="eyebrow">Accord</p>
+          <h3>Beaufort에 어울리는 한 잔</h3>
+          <p>꽃향이 도는 경성 치즈에는 산뜻한 사보이 화이트 와인을. 숙성 기간별로 고른 페어링 노트.</p>
+          <a class="link-it" href="#">Lire la suite <span class="arrow">→</span></a>
+        </article>
+        <article class="article reveal" style="--d:.1s" data-cat="recette">
+          <div class="article__img"><img src="img/cheese-bleu.webp" alt="" loading="lazy"></div>
+          <p class="eyebrow">Recette</p>
+          <h3>푸른 결의 치즈, 꿀과 호두</h3>
+          <p>Bleu de Bonneval의 짭조름함을 부드럽게 감싸는 가장 간단한 디저트 플레이트.</p>
+          <a class="link-it" href="#">Lire la suite <span class="arrow">→</span></a>
+        </article>
+        <article class="article reveal" style="--d:.2s" data-cat="histoire">
+          <div class="article__img"><img src="img/cheese-comte.webp" alt="" loading="lazy"></div>
+          <p class="eyebrow">Histoire</p>
+          <h3>24개월, Comté가 기다린 시간</h3>
+          <p>단백질이 결정이 되어 씹히기까지. 오래 숙성한 치즈에만 생기는 작은 알갱이 이야기.</p>
+          <a class="link-it" href="#">Lire la suite <span class="arrow">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container index-split">
+      <div class="index-split__aside reveal">
+        <p class="eyebrow">Archives</p>
+        <h2 class="display h-md">Archives</h2>
+        <p class="sub-kr">지난 호 모아보기</p>
+        <p class="body">지난 가제트를 호수별로 다시 펼쳐보세요.</p>
+        <img class="book" src="img/book.webp" alt="" loading="lazy">
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <ul class="ledger" data-pages="3">
+          <li><a href="#"><span class="tag">Édition Nº 138</span><span class="t">— 숙성고의 겨울 준비</span><span class="dots"></span><span class="d">2026.10</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 137</span><span class="t">— 염소젖 치즈의 계절</span><span class="dots"></span><span class="d">2026.09</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 136</span><span class="t">— 라클렛을 녹이는 법</span><span class="dots"></span><span class="d">2026.08</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 135</span><span class="t">— 산악 목초와 여름 우유</span><span class="dots"></span><span class="d">2026.07</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 134</span><span class="t">— 치즈 칼 고르는 법</span><span class="dots"></span><span class="d">2026.06</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 133</span><span class="t">— 첫 번째 시음회 기록</span><span class="dots"></span><span class="d">2026.05</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 132</span><span class="t">— Reblochon의 이름 이야기</span><span class="dots"></span><span class="d">2026.04</span></a></li>
+          <li><a href="#"><span class="tag">Édition Nº 131</span><span class="t">— 와인 없는 페어링</span><span class="dots"></span><span class="d">2026.03</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="pager reveal" aria-label="페이지">
+      <button class="pager__nav" type="button" data-dir="prev">‹ précédent</button>
+      <div class="pager__nums"><button type="button" class="is-active">I</button><span class="sep">·</span><button type="button">II</button><span class="sep">·</span><button type="button">III</button></div>
+      <button class="pager__nav" type="button" data-dir="next">suivant ›</button>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <a href="index.html" aria-label="L'Affiné 홈"><img src="img/logo-light.svg" alt="L'Affiné" width="309" height="107"></a>
+        <p>Maison de Fromage · Depuis 1887</p>
+      </div>
+      <div class="footer__cols reveal" style="--d:.1s">
+        <div>
+          <h4>La Maison</h4>
+          <ul><li><a href="about.html">브랜드 이야기</a></li><li><a href="about.html#affineurs">숙성 장인</a></li><li><a href="about.html#cave">숙성고</a></li></ul>
+        </div>
+        <div>
+          <h4>La Boutique</h4>
+          <ul><li><a href="shop.html">서울 성동구 서울숲2길 18-7</a></li><li><a href="shop.html#horaires">화–토 11:00 – 20:00 · 일 ~18:00</a></li><li><a href="tel:02-1887-0811">02-1887-0811</a></li></ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="index.html#lettre">La Lettre 뉴스레터</a></li><li><a href="contact.html">문의하기</a></li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© L'Affiné — Portfolio project</p>
+      <p class="it">Imprimé à Séoul</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="맨 위로">
+  <svg class="ring" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29"/></svg>
+  <span class="lbl"><b>↑</b>haut</span>
+</button>
+<div class="toast" role="status" aria-live="polite"><span class="it">L'Affiné</span><span class="msg"></span></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Boutique — L'Affiné</title>
+  <meta name="description" content="L'Affiné 매장 안내 — 오시는 길, 영업시간, 시음 예약.">
+  <meta name="theme-color" content="#FAF4E8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-shop">
+
+<a class="sr-only" href="#content">본문 바로가기</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__left">Maison de Fromage · Savoie, depuis 1887</p>
+      <p class="topbar__center"><span class="dot" aria-hidden="true"></span>Grand Opening — le 8, novembre</p>
+      <div class="lang" role="group" aria-label="언어 선택">
+        <button type="button" class="is-active" data-lang="kr">KR</button><span aria-hidden="true">/</span><button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <div class="masthead__meta">
+        <p class="eyebrow">Édition d'hiver</p>
+        <p class="it">Nº 139 —<span data-today>2026.11.16</span></p>
+      </div>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné — savoie · depuis 1887" width="309" height="107"></a>
+      <div class="masthead__right">
+        <p class="eyebrow">Aujourd'hui</p>
+        <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="주 메뉴">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__mini-logo" href="index.html" tabindex="-1" aria-hidden="true"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="products.html"><span class="nav__en">Products</span><span class="nav__fr">Les Fromages</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html"><span class="nav__en">About us</span><span class="nav__fr">La Maison</span></a></li>
+          <li class="nav__item"><a class="nav__link is-current" aria-current="page" href="shop.html"><span class="nav__en">Shop info</span><span class="nav__fr">La Boutique</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="journal.html"><span class="nav__en">Journal</span><span class="nav__fr">La Gazette</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="news.html"><span class="nav__en">News</span><span class="nav__fr">Avis</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html"><span class="nav__en">Contact</span><span class="nav__fr">Correspondance</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mbar">
+    <div class="container mbar__inner">
+      <p class="mbar__meta">Nº 139<span> — <span data-today>2026.11.16</span></span></p>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné" width="309" height="107"></a>
+      <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <p class="eyebrow" style="margin-bottom:18px">Sommaire</p>
+    <ul class="drawer__list">
+      <li><a href="products.html"><span class="num">I.</span><span class="en">Products</span><span class="fr">Les Fromages</span></a></li>
+          <li><a href="about.html"><span class="num">II.</span><span class="en">About us</span><span class="fr">La Maison</span></a></li>
+          <li><a href="shop.html" class="is-current"><span class="num">III.</span><span class="en">Shop info</span><span class="fr">La Boutique</span></a></li>
+          <li><a href="journal.html"><span class="num">IV.</span><span class="en">Journal</span><span class="fr">La Gazette</span></a></li>
+          <li><a href="news.html"><span class="num">V.</span><span class="en">News</span><span class="fr">Avis</span></a></li>
+          <li><a href="contact.html"><span class="num">VI.</span><span class="en">Contact</span><span class="fr">Correspondance</span></a></li>
+    </ul>
+    <div class="drawer__foot">
+      <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      <p class="eyebrow">Savoie · depuis 1887</p>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumb reveal" aria-label="breadcrumb"><a href="index.html">Accueil</a><span class="sep">/</span><span>La Boutique</span></nav>
+        <p class="eyebrow eyebrow--red reveal" style="--d:.05s">Nº III — La Boutique</p>
+        <h1 class="display h-lg split-words">La Boutique</h1>
+        <p class="sub-kr reveal" style="--d:.3s">숙성고 옆, 치즈를 고르고 맛보는 곳</p>
+      </div>
+      <div class="page-hero__art reveal reveal--right" style="--d:.2s"><img src="img/cheese-chevrotin.webp" alt="작은 치즈 두 개 세밀화" width="800" height="480"></div>
+    </div>
+  </section>
+
+  <section class="section shopmap" id="plan" style="padding-top:20px">
+    <div class="container shopmap__grid">
+      <figure class="shopmap__map reveal">
+        <img src="img/map.svg" alt="매장 주변 손그림 지도" width="882" height="759" loading="lazy">
+        <span class="pin" aria-hidden="true"></span>
+        <figcaption class="caption"><span>Plan du Quartier —</span><span class="kr">매장 주변 지도</span></figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow reveal">Plan du quartier</p>
+        <h2 class="display h-md split-words" style="margin-block:10px 18px">Venir à la Boutique</h2>
+        <p class="sub-kr reveal">매장으로 오시는 길</p>
+        <ol class="route reveal" style="--d:.1s">
+          <li><span class="n">1.</span>L'Affiné<span class="dots"></span><span class="v">매장</span></li>
+          <li><span class="n">2.</span>Place du Marché<span class="dots"></span><span class="v">광장 · 분수</span></li>
+          <li><span class="n">3.</span>Jardin du Fromage<span class="dots"></span><span class="v">정원</span></li>
+          <li><span class="n">4.</span>Quartier des Marchés<span class="dots"></span><span class="v">시장</span></li>
+          <li><span class="n">5.</span>Rue des Fromages<span class="dots"></span><span class="v">큰길</span></li>
+          <li><span class="n">6.</span>Vers la Gare<span class="dots"></span><span class="v">역 · 도보 5분</span></li>
+        </ol>
+        <div class="contact-grid reveal" style="--d:.15s">
+          <div><p class="eyebrow">Adresse</p><p data-address>서울 성동구 서울숲2길 18-7</p></div>
+          <div><p class="eyebrow">Téléphone</p><p><a href="tel:02-1887-0811">02-1887-0811</a></p></div>
+          <div><p class="eyebrow">Parking</p><p>전용 2대 · 구매 시 1시간 무료</p></div>
+          <div><p class="eyebrow">E-mail</p><p><a href="mailto:bonjour@laffine.kr">bonjour@laffine.kr</a></p></div>
+        </div>
+        <div class="shop-cta reveal" style="--d:.2s">
+          <a class="btn btn--solid" href="#" target="_blank" rel="noopener">길찾기</a>
+          <button class="btn" type="button" data-copy-address>주소 복사</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="horaires">
+    <div class="container boards">
+      <div class="frame frame--thick reveal" style="padding:0">
+        <div class="board">
+          <div class="head">
+            <div><p class="eyebrow">Horaires</p><h2 class="display">Horaires</h2><p class="sub">영업시간</p></div>
+            <div class="board__crest" aria-hidden="true"><img src="img/crest.svg" alt=""><img class="mini" src="img/logo.svg" alt=""></div>
+          </div>
+          <ul class="hours" data-hours>
+            <li data-days="1"><span class="k">Lundi</span><span class="dots"></span><span class="v is-closed">휴무</span></li>
+            <li data-days="2,3,4,5"><span class="k">Mardi – Vendredi</span><span class="dots"></span><span class="v">11:00 – 20:00</span></li>
+            <li data-days="6"><span class="k">Samedi</span><span class="dots"></span><span class="v">11:00 – 20:00</span></li>
+            <li data-days="0"><span class="k">Dimanche</span><span class="dots"></span><span class="v">11:00 – 18:00</span></li>
+            <li><span class="k is-closed">Fermé</span><span class="dots"></span><span class="v">매주 월요일 · 설 · 추석 당일</span></li>
+          </ul>
+          <p class="note">명절 및 숙성고 점검일 휴무는 새소식에서 미리 알려드립니다.</p>
+        </div>
+      </div>
+      <div class="frame frame--thick reveal" style="padding:0;--d:.1s" id="degustation">
+        <div class="board">
+          <p class="eyebrow">Dégustation</p>
+          <h2 class="display">Dégustation</h2>
+          <p class="sub">숙성 단계별 시음 · 예약제</p>
+          <div class="cal">
+            <div class="cal__dow" aria-hidden="true"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+            <div class="cal__days" role="group" aria-label="시음 날짜 선택"><button type="button" aria-pressed="false">1</button><button type="button" aria-pressed="false">2</button><button type="button" aria-pressed="false" disabled aria-disabled="true">3</button><button type="button" aria-pressed="false">4</button><button type="button" aria-pressed="false">5</button><button type="button" aria-pressed="false">6</button><button type="button" aria-pressed="false">7</button><button type="button" aria-pressed="false">8</button><button type="button" aria-pressed="false">9</button><button type="button" aria-pressed="false" disabled aria-disabled="true">10</button><button type="button" aria-pressed="false">11</button><button type="button" class="is-active" aria-pressed="true">12</button><button type="button" aria-pressed="false">13</button><button type="button" aria-pressed="false">14</button><button type="button" aria-pressed="false">15</button><button type="button" aria-pressed="false">16</button><button type="button" aria-pressed="false" disabled aria-disabled="true">17</button><button type="button" aria-pressed="false">18</button><button type="button" aria-pressed="false">19</button><button type="button" aria-pressed="false">20</button><button type="button" aria-pressed="false">21</button></div>
+          </div>
+          <dl class="specs">
+            <div class="spec"><dt>정원</dt><span class="lead-dots"></span><dd>8명</dd></div>
+            <div class="spec"><dt>소요 시간</dt><span class="lead-dots"></span><dd>90분</dd></div>
+            <div class="spec"><dt>요금</dt><span class="lead-dots"></span><dd>1인 45,000원</dd></div>
+          </dl>
+          <a class="btn btn--solid btn--sm" href="contact.html" data-reserve>시음 예약하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <p class="eyebrow reveal">Accès</p>
+        <h2 class="display h-md split-words">Comment venir</h2>
+        <p class="sub-kr reveal" style="font-size:15px;margin-top:10px">교통편 안내</p>
+      </div>
+      <div class="access">
+        <div class="access__item reveal"><svg viewBox="0 0 40 56" fill="none" stroke="#2A2119" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="36" height="40" rx="6"/><path d="M2 24h36"/><circle cx="11" cy="31" r="3"/><circle cx="29" cy="31" r="3"/><path d="M8 42 2 54M32 42l6 12"/></svg><h3>En Train</h3><p class="k">기차 · 지하철</p><p>수인분당선 서울숲역 4번 출구에서 Rue des Fromages를 따라 도보 5분. 2호선 뚝섬역에서는 도보 10분입니다. 지도의 6번 표시를 참고하세요.</p></div>
+        <div class="access__item reveal" style="--d:.1s"><svg viewBox="0 0 48 52" fill="none" stroke="#2A2119" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="44" height="40" rx="5"/><path d="M2 24h44M8 10h32"/><circle cx="11" cy="32" r="2.6"/><circle cx="35" cy="32" r="2.6"/><path d="M10 42v8M38 42v8"/></svg><h3>En Bus</h3><p class="k">버스</p><p>‘서울숲·성수역 입구’ 정류장(2014, 2224, 성동03) 하차. Place du Marché 분수 맞은편에 매장이 있습니다.</p></div>
+        <div class="access__item reveal" style="--d:.2s"><svg viewBox="0 0 56 44" fill="none" stroke="#2A2119" stroke-width="1.6" aria-hidden="true"><path d="M8 22 13 6h30l5 16"/><rect x="2" y="22" width="52" height="10" rx="3"/><circle cx="12" cy="36" r="5"/><circle cx="44" cy="36" r="5"/></svg><h3>En Voiture</h3><p class="k">자가용</p><p>건물 뒤편 전용 주차 2대, 구매 고객은 1시간 무료입니다. 주말에는 주변 도로가 혼잡하니 대중교통을 권합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section storefront" style="padding-top:0">
+    <div class="container">
+      <figure>
+        <div class="frame frame--thick reveal-mask"><div class="photo"><img src="img/storefront.jpg" alt="L'Affiné 차양이 달린 매장 외관" width="1024" height="350"></div></div>
+        <figcaption class="caption reveal"><span>Planche IV. — L'intérieur de la boutique</span></figcaption>
+      </figure>
+      <div class="rooms">
+        <div class="room reveal"><p class="eyebrow">La Vitrine</p><h3>La Vitrine</h3><p>그날 숙성을 마친 치즈 진열대</p></div>
+        <div class="room reveal" style="--d:.1s"><p class="eyebrow">La Cave</p><h3>La Cave</h3><p>유리창 너머로 보이는 숙성고</p></div>
+        <div class="room reveal" style="--d:.2s"><p class="eyebrow">Le Salon</p><h3>Le Salon</h3><p>시음과 페어링 클래스 공간</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <a href="index.html" aria-label="L'Affiné 홈"><img src="img/logo-light.svg" alt="L'Affiné" width="309" height="107"></a>
+        <p>Maison de Fromage · Depuis 1887</p>
+      </div>
+      <div class="footer__cols reveal" style="--d:.1s">
+        <div>
+          <h4>La Maison</h4>
+          <ul><li><a href="about.html">브랜드 이야기</a></li><li><a href="about.html#affineurs">숙성 장인</a></li><li><a href="about.html#cave">숙성고</a></li></ul>
+        </div>
+        <div>
+          <h4>La Boutique</h4>
+          <ul><li><a href="shop.html">서울 성동구 서울숲2길 18-7</a></li><li><a href="shop.html#horaires">화–토 11:00 – 20:00 · 일 ~18:00</a></li><li><a href="tel:02-1887-0811">02-1887-0811</a></li></ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="index.html#lettre">La Lettre 뉴스레터</a></li><li><a href="contact.html">문의하기</a></li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© L'Affiné — Portfolio project</p>
+      <p class="it">Imprimé à Séoul</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="맨 위로">
+  <svg class="ring" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29"/></svg>
+  <span class="lbl"><b>↑</b>haut</span>
+</button>
+<div class="toast" role="status" aria-live="polite"><span class="it">L'Affiné</span><span class="msg"></span></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

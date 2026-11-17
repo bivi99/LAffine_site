@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les Fromages — L'Affiné</title>
+  <meta name="description" content="L'Affiné 숙성고에서 시간을 보낸 아홉 가지 치즈 도감.">
+  <meta name="theme-color" content="#FAF4E8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-products">
+
+<a class="sr-only" href="#content">본문 바로가기</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__left">Maison de Fromage · Savoie, depuis 1887</p>
+      <p class="topbar__center"><span class="dot" aria-hidden="true"></span>Grand Opening — le 8, novembre</p>
+      <div class="lang" role="group" aria-label="언어 선택">
+        <button type="button" class="is-active" data-lang="kr">KR</button><span aria-hidden="true">/</span><button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <div class="masthead__meta">
+        <p class="eyebrow">Édition d'hiver</p>
+        <p class="it">Nº 139 —<span data-today>2026.11.16</span></p>
+      </div>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné — savoie · depuis 1887" width="309" height="107"></a>
+      <div class="masthead__right">
+        <p class="eyebrow">Aujourd'hui</p>
+        <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="주 메뉴">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__mini-logo" href="index.html" tabindex="-1" aria-hidden="true"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link is-current" aria-current="page" href="products.html"><span class="nav__en">Products</span><span class="nav__fr">Les Fromages</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html"><span class="nav__en">About us</span><span class="nav__fr">La Maison</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="shop.html"><span class="nav__en">Shop info</span><span class="nav__fr">La Boutique</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="journal.html"><span class="nav__en">Journal</span><span class="nav__fr">La Gazette</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="news.html"><span class="nav__en">News</span><span class="nav__fr">Avis</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html"><span class="nav__en">Contact</span><span class="nav__fr">Correspondance</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mbar">
+    <div class="container mbar__inner">
+      <p class="mbar__meta">Nº 139<span> — <span data-today>2026.11.16</span></span></p>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné" width="309" height="107"></a>
+      <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <p class="eyebrow" style="margin-bottom:18px">Sommaire</p>
+    <ul class="drawer__list">
+      <li><a href="products.html" class="is-current"><span class="num">I.</span><span class="en">Products</span><span class="fr">Les Fromages</span></a></li>
+          <li><a href="about.html"><span class="num">II.</span><span class="en">About us</span><span class="fr">La Maison</span></a></li>
+          <li><a href="shop.html"><span class="num">III.</span><span class="en">Shop info</span><span class="fr">La Boutique</span></a></li>
+          <li><a href="journal.html"><span class="num">IV.</span><span class="en">Journal</span><span class="fr">La Gazette</span></a></li>
+          <li><a href="news.html"><span class="num">V.</span><span class="en">News</span><span class="fr">Avis</span></a></li>
+          <li><a href="contact.html"><span class="num">VI.</span><span class="en">Contact</span><span class="fr">Correspondance</span></a></li>
+    </ul>
+    <div class="drawer__foot">
+      <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      <p class="eyebrow">Savoie · depuis 1887</p>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumb reveal" aria-label="breadcrumb"><a href="index.html">Accueil</a><span class="sep">/</span><span>Les Fromages</span></nav>
+        <p class="eyebrow eyebrow--red reveal" style="--d:.05s">Nº I — Catalogue</p>
+        <h1 class="display h-lg split-words">Catalogue des Fromages</h1>
+        <p class="sub-kr reveal" style="--d:.3s">L'Affiné의 숙성고에서 시간을 보낸 아홉 가지 치즈</p>
+      </div>
+      <div class="page-hero__art reveal reveal--right" style="--d:.2s"><img src="img/cheese-beaufort.webp" alt="치즈 휠과 조각 세밀화" width="800" height="480"></div>
+    </div>
+  </section>
+
+  <section class="container" data-catalog>
+    <div class="affinage reveal" data-age-filter data-default="all">
+      <div class="affinage__head">
+        <p><span class="it">L'Affinage</span><span class="sub-kr" style="font-size:14px">숙성 기간으로 고르기</span></p>
+        <p class="affinage__count" aria-live="polite"><b data-count>9</b>spécimens</p>
+      </div>
+      <div class="age-tabs" role="tablist" aria-label="숙성 기간" style="--n:4">
+        <button class="age-tab is-active" role="tab" data-age="all" aria-selected="true"><span class="t">Tout</span><span class="s">전체 보기</span></button>
+        <button class="age-tab" role="tab" data-age="jeune" aria-selected="false"><span class="t">Jeune</span><span class="s">1개월 이하</span></button>
+        <button class="age-tab" role="tab" data-age="affine" aria-selected="false"><span class="t">Affiné</span><span class="s">1 – 6개월</span></button>
+        <button class="age-tab" role="tab" data-age="vieux" aria-selected="false"><span class="t">Vieux</span><span class="s">6개월 이상</span></button>
+      </div>
+      <div class="timeline" aria-hidden="true">
+            <div class="timeline__track">
+              <div class="timeline__base"></div>
+              <span class="timeline__tick timeline__tick--major" style="left:0%"></span><span class="timeline__tick" style="left:5%"></span><span class="timeline__tick" style="left:10%"></span><span class="timeline__tick" style="left:15%"></span>
+              <span class="timeline__tick timeline__tick--major" style="left:20%"></span><span class="timeline__tick" style="left:25%"></span><span class="timeline__tick" style="left:30%"></span><span class="timeline__tick" style="left:35%"></span>
+              <span class="timeline__tick timeline__tick--major" style="left:40%"></span><span class="timeline__tick" style="left:45%"></span><span class="timeline__tick" style="left:50%"></span><span class="timeline__tick" style="left:55%"></span>
+              <span class="timeline__tick timeline__tick--major" style="left:60%"></span><span class="timeline__tick" style="left:65%"></span><span class="timeline__tick" style="left:70%"></span><span class="timeline__tick" style="left:75%"></span>
+              <span class="timeline__tick timeline__tick--major" style="left:80%"></span><span class="timeline__tick" style="left:85%"></span><span class="timeline__tick" style="left:90%"></span><span class="timeline__tick" style="left:95%"></span>
+              <span class="timeline__tick timeline__tick--major" style="left:100%"></span>
+              <div class="timeline__range"></div>
+              <span class="timeline__knob timeline__knob--from"></span>
+              <span class="timeline__knob timeline__knob--to"></span>
+            </div>
+            <div class="timeline__labels">
+              <span style="left:0%" data-at="0">Jour 1</span><span style="left:20%" data-at="20">1 mois</span><span style="left:40%" data-at="40">3 mois</span><span style="left:60%" data-at="60">6 mois</span><span style="left:80%" data-at="80">12 mois</span><span style="left:100%" data-at="100">24 mois +</span>
+            </div>
+          </div>
+    </div>
+
+    <div class="catalog section" style="padding-bottom:var(--section)">
+      <aside class="filters reveal" aria-label="치즈 필터">
+        <button class="filters__toggle" type="button" aria-expanded="false">Filtres <span class="pm" aria-hidden="true"></span></button>
+        <div class="filters__body"><div>
+          <div class="fgroup">
+            <h4>Le Lait <small>원유</small></h4>
+            <ul><li><label class="check"><input type="checkbox" name="milk" value="cow"> 소젖</label></li><li><label class="check"><input type="checkbox" name="milk" value="goat"> 염소젖</label></li><li><label class="check"><input type="checkbox" name="milk" value="sheep"> 양젖</label></li></ul>
+          </div>
+          <div class="fgroup">
+            <h4>La Pâte <small>질감</small></h4>
+            <ul><li><label class="check"><input type="checkbox" name="pate" value="frais"> 프레시</label></li><li><label class="check"><input type="checkbox" name="pate" value="soft"> 연성</label></li><li><label class="check"><input type="checkbox" name="pate" value="semi"> 반경성</label></li><li><label class="check"><input type="checkbox" name="pate" value="hard"> 경성</label></li><li><label class="check"><input type="checkbox" name="pate" value="blue"> 블루</label></li></ul>
+          </div>
+          <div class="fgroup">
+            <h4>La Région <small>산지</small></h4>
+            <ul><li><label class="check"><input type="checkbox" name="region" value="savoie"> Savoie</label></li><li><label class="check"><input type="checkbox" name="region" value="haute-savoie"> Haute-Savoie</label></li><li><label class="check"><input type="checkbox" name="region" value="jura"> Jura</label></li></ul>
+          </div>
+          <button class="btn btn--sm" type="button" data-reset>필터 초기화</button>
+        </div></div>
+      </aside>
+
+      <div>
+        <div class="catalog__bar reveal">
+          <label class="sr-only" for="sort">정렬</label>
+          <select class="sort" id="sort" data-sort>
+            <option value="asc">숙성 기간이 짧은 순</option>
+            <option value="desc">숙성 기간이 긴 순</option>
+            <option value="name">이름 순</option>
+          </select>
+          <div class="view-toggle" role="group" aria-label="보기 방식">
+            <button type="button" class="is-active" data-view="grid">그리드</button>
+            <button type="button" data-view="list">리스트</button>
+          </div>
+        </div>
+        <div class="catalog__grid" data-cards>
+        <article class="specimen reveal" style="--d:0.00s" data-age="jeune" data-milk="cow" data-pate="frais" data-region="savoie" data-days="7" data-no="01">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 01</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-frais.webp" alt="Fromage Frais 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Fromage Frais</h3>
+              <p class="specimen__type">프레시 · 소젖</p>
+              <p class="specimen__quote">“갓 만든 우유의 단맛과 산뜻한 산미”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>1주</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Savoie</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 7,500원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.06s" data-age="jeune" data-milk="goat" data-pate="soft" data-region="haute-savoie" data-days="21" data-no="02">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 02</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-chevrotin.webp" alt="Chevrotin 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Chevrotin</h3>
+              <p class="specimen__type">연성 · 염소젖</p>
+              <p class="specimen__quote">“헤이즐넛 향이 은은한 염소젖 치즈”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>3주</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Aravis</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 14,000원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.12s" data-age="jeune" data-milk="cow" data-pate="soft" data-region="haute-savoie" data-days="28" data-no="03">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 03</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-reblochon.webp" alt="Reblochon 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Reblochon</h3>
+              <p class="specimen__type">연성 · 소젖</p>
+              <p class="specimen__quote">“크리미한 속살과 버섯 향의 껍질”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>4주</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Haute-Savoie</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 9,500원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.00s" data-age="affine" data-milk="cow" data-pate="semi" data-region="savoie" data-days="60" data-no="04">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 04</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-tomme.webp" alt="Tomme de Savoie 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Tomme de Savoie</h3>
+              <p class="specimen__type">반경성 · 소젖</p>
+              <p class="specimen__quote">“회색 껍질 아래 부드러운 흙내음”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>2개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Savoie</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 9,000원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.06s" data-age="affine" data-milk="cow" data-pate="blue" data-region="savoie" data-days="90" data-no="05">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 05</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-bleu.webp" alt="Bleu de Bonneval 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Bleu de Bonneval</h3>
+              <p class="specimen__type">블루 · 소젖</p>
+              <p class="specimen__quote">“푸른 결이 주는 짭조름한 여운”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>3개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Haute-Maurienne</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 13,000원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.12s" data-age="affine" data-milk="cow" data-pate="semi" data-region="savoie" data-days="91" data-no="06">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 06</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-raclette.webp" alt="Raclette de Savoie 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Raclette de Savoie</h3>
+              <p class="specimen__type">반경성 · 소젖</p>
+              <p class="specimen__quote">“녹였을 때 비로소 완성되는 고소함”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>3개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Savoie</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 8,500원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.00s" data-age="vieux" data-milk="cow" data-pate="semi" data-region="haute-savoie" data-days="240" data-no="07">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 07</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-abondance.webp" alt="Abondance 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Abondance</h3>
+              <p class="specimen__type">반경성 · 소젖</p>
+              <p class="specimen__quote">“과일 향과 가벼운 쌉쌀함의 균형”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>8개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Chablais</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 11,000원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.06s" data-age="vieux" data-milk="cow" data-pate="hard" data-region="savoie" data-days="365" data-no="08">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 08</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-beaufort.webp" alt="Beaufort 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Beaufort</h3>
+              <p class="specimen__type">경성 · 소젖</p>
+              <p class="specimen__quote">“알프스 목초의 꽃향과 깊은 감칠맛”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>12개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Beaufortain</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 14,500원</dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="specimen reveal" style="--d:0.12s" data-age="vieux" data-milk="cow" data-pate="hard" data-region="jura" data-days="730" data-no="09">
+          <div class="specimen__in">
+            <div class="specimen__head"><span>Nº 09</span><span class="specimen__plate">PLANCHE</span></div>
+            <div class="specimen__img"><img src="img/cheese-comte.webp" alt="Comté 세밀화" loading="lazy" width="800" height="480"></div>
+            <div class="specimen__text">
+              <h3 class="specimen__name">Comté</h3>
+              <p class="specimen__type">경성 · 소젖</p>
+              <p class="specimen__quote">“결정이 씹히는 진한 견과 풍미”</p>
+            </div>
+            <dl class="specs">
+              <div class="spec"><dt>숙성</dt><span class="lead-dots"></span><dd>24개월</dd></div>
+              <div class="spec"><dt>산지</dt><span class="lead-dots"></span><dd>Jura</dd></div>
+              <div class="spec"><dt>가격</dt><span class="lead-dots"></span><dd>100g · 15,000원</dd></div>
+            </dl>
+          </div>
+        </article>
+        </div>
+        <p class="catalog__empty"><span class="it">Aucun spécimen</span>조건에 맞는 치즈가 없습니다. 필터를 조정해 보세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="coffret">
+    <div class="container">
+      <div class="coffret__box reveal">
+        <div class="photo"><img src="img/tasting.jpg" alt="와인과 세 가지 치즈가 놓인 시음 보드" width="1200" height="1490" loading="lazy"></div>
+        <div class="coffret__text">
+          <p class="eyebrow">Coffret dégustation</p>
+          <h2 class="display h-sm">Le Coffret de la Maison</h2>
+          <p>도감 속 치즈를 숙성 단계별로 세 조각씩. 와인 한 병과 함께 시작하는 시음.</p>
+          <a class="btn btn--ghost-light" href="news.html">코프레 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <a href="index.html" aria-label="L'Affiné 홈"><img src="img/logo-light.svg" alt="L'Affiné" width="309" height="107"></a>
+        <p>Maison de Fromage · Depuis 1887</p>
+      </div>
+      <div class="footer__cols reveal" style="--d:.1s">
+        <div>
+          <h4>La Maison</h4>
+          <ul><li><a href="about.html">브랜드 이야기</a></li><li><a href="about.html#affineurs">숙성 장인</a></li><li><a href="about.html#cave">숙성고</a></li></ul>
+        </div>
+        <div>
+          <h4>La Boutique</h4>
+          <ul><li><a href="shop.html">서울 성동구 서울숲2길 18-7</a></li><li><a href="shop.html#horaires">화–토 11:00 – 20:00 · 일 ~18:00</a></li><li><a href="tel:02-1887-0811">02-1887-0811</a></li></ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="index.html#lettre">La Lettre 뉴스레터</a></li><li><a href="contact.html">문의하기</a></li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© L'Affiné — Portfolio project</p>
+      <p class="it">Imprimé à Séoul</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="맨 위로">
+  <svg class="ring" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29"/></svg>
+  <span class="lbl"><b>↑</b>haut</span>
+</button>
+<div class="toast" role="status" aria-live="polite"><span class="it">L'Affiné</span><span class="msg"></span></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avis & Annonces — L'Affiné</title>
+  <meta name="description" content="L'Affiné 매장 공지 · 입고 · 이벤트 소식.">
+  <meta name="theme-color" content="#FAF4E8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="page-news">
+
+<a class="sr-only" href="#content">본문 바로가기</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__left">Maison de Fromage · Savoie, depuis 1887</p>
+      <p class="topbar__center"><span class="dot" aria-hidden="true"></span>Grand Opening — le 8, novembre</p>
+      <div class="lang" role="group" aria-label="언어 선택">
+        <button type="button" class="is-active" data-lang="kr">KR</button><span aria-hidden="true">/</span><button type="button" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead">
+    <div class="container masthead__inner">
+      <div class="masthead__meta">
+        <p class="eyebrow">Édition d'hiver</p>
+        <p class="it">Nº 139 —<span data-today>2026.11.16</span></p>
+      </div>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné — savoie · depuis 1887" width="309" height="107"></a>
+      <div class="masthead__right">
+        <p class="eyebrow">Aujourd'hui</p>
+        <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="주 메뉴">
+    <div class="container">
+      <div class="nav__inner">
+        <a class="nav__mini-logo" href="index.html" tabindex="-1" aria-hidden="true"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="products.html"><span class="nav__en">Products</span><span class="nav__fr">Les Fromages</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="about.html"><span class="nav__en">About us</span><span class="nav__fr">La Maison</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="shop.html"><span class="nav__en">Shop info</span><span class="nav__fr">La Boutique</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="journal.html"><span class="nav__en">Journal</span><span class="nav__fr">La Gazette</span></a></li>
+          <li class="nav__item"><a class="nav__link is-current" aria-current="page" href="news.html"><span class="nav__en">News</span><span class="nav__fr">Avis</span></a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html"><span class="nav__en">Contact</span><span class="nav__fr">Correspondance</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mbar">
+    <div class="container mbar__inner">
+      <p class="mbar__meta">Nº 139<span> — <span data-today>2026.11.16</span></span></p>
+      <a class="brand" href="index.html" aria-label="L'Affiné 홈"><img src="img/logo.svg" alt="L'Affiné" width="309" height="107"></a>
+      <button class="burger" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <p class="eyebrow" style="margin-bottom:18px">Sommaire</p>
+    <ul class="drawer__list">
+      <li><a href="products.html"><span class="num">I.</span><span class="en">Products</span><span class="fr">Les Fromages</span></a></li>
+          <li><a href="about.html"><span class="num">II.</span><span class="en">About us</span><span class="fr">La Maison</span></a></li>
+          <li><a href="shop.html"><span class="num">III.</span><span class="en">Shop info</span><span class="fr">La Boutique</span></a></li>
+          <li><a href="journal.html"><span class="num">IV.</span><span class="en">Journal</span><span class="fr">La Gazette</span></a></li>
+          <li><a href="news.html" class="is-current"><span class="num">V.</span><span class="en">News</span><span class="fr">Avis</span></a></li>
+          <li><a href="contact.html"><span class="num">VI.</span><span class="en">Contact</span><span class="fr">Correspondance</span></a></li>
+    </ul>
+    <div class="drawer__foot">
+      <a class="link-it" href="shop.html">Visiter la Boutique <span class="arrow">→</span></a>
+      <p class="eyebrow">Savoie · depuis 1887</p>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <nav class="crumb reveal" aria-label="breadcrumb"><a href="index.html">Accueil</a><span class="sep">/</span><span>Avis</span></nav>
+        <p class="eyebrow eyebrow--red reveal" style="--d:.05s">Nº V — Avis</p>
+        <h1 class="display h-lg split-words">Avis &amp; Annonces</h1>
+        <p class="sub-kr reveal" style="--d:.3s">매장 공지 · 입고 · 이벤트 소식</p>
+      </div>
+      <div class="page-hero__art reveal reveal--right" style="--d:.2s"><img src="img/cheese-frais.webp" alt="구멍 뚫린 원통형 치즈 세밀화" width="800" height="480"></div>
+    </div>
+  </section>
+
+  <section class="container" style="padding-bottom:80px">
+    <div class="news-tools reveal">
+      <div class="seg" role="tablist" aria-label="소식 분류" data-seg>
+        <button type="button" class="is-active" data-filter="all"><span class="it">Tous</span> · 전체</button>
+        <button type="button" data-filter="avis"><span class="it">Avis</span> · 공지</button>
+        <button type="button" data-filter="arrivage"><span class="it">Arrivage</span> · 입고</button>
+        <button type="button" data-filter="evenement"><span class="it">Événement</span> · 이벤트</button>
+      </div>
+      <div class="search">
+        <label for="q">검색</label>
+        <input class="u-input" id="q" type="search" placeholder="Rechercher..." data-search>
+      </div>
+    </div>
+
+    <article class="featured reveal" data-cat="evenement">
+      <div class="photo"><img src="img/tasting.jpg" alt="와인과 치즈가 놓인 시음 보드" width="1200" height="1490" loading="lazy"></div>
+      <div class="featured__text">
+        <span class="dday" data-dday="2026-12-12" aria-label="행사까지 남은 날">D-25</span>
+        <p class="eyebrow eyebrow--red">Événement · À venir</p>
+        <h2 class="display">Dégustation d'Hiver</h2>
+        <p class="kr">겨울 숙성 치즈 시음회 — 숙성 기간별 세 가지 치즈와 사보이 와인</p>
+        <dl class="specs">
+          <div class="spec"><dt>일시</dt><span class="lead-dots"></span><dd>12월 12일(토) 17:00</dd></div>
+          <div class="spec"><dt>정원</dt><span class="lead-dots"></span><dd>12명 · 선착순</dd></div>
+          <div class="spec"><dt>참가비</dt><span class="lead-dots"></span><dd>1인 55,000원</dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn btn--solid" href="contact.html">참가 신청</a>
+          <a class="btn" href="#">자세히 보기</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="section section--tint" style="padding-block:90px">
+    <div class="container notices" data-notices>
+        <article class="specimen notice reveal" style="--d:0.00s" data-cat="avis">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Avis</p><p class="date">2026.11.14</p></div><span class="seal">공지</span></div>
+            <h3>겨울 영업시간 변경 안내</h3>
+            <p>12월 1일부터 2월 28일까지 평일 영업시간이 한 시간 앞당겨집니다.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="specimen notice reveal" style="--d:0.08s" data-cat="arrivage">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Arrivage</p><p class="date">2026.11.12</p></div><span class="seal">입고</span></div>
+            <h3>Beaufort 12개월 입고</h3>
+            <p>여름 목초로 만든 Beaufort가 1년의 숙성을 마치고 진열대에 올랐습니다.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="specimen notice reveal" style="--d:0.16s" data-cat="evenement">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Événement</p><p class="date">2026.11.10</p></div><span class="seal">이벤트</span></div>
+            <h3>페어링 클래스 모집</h3>
+            <p>와인 소믈리에와 함께하는 소규모 페어링 클래스 12월 세 차례(목) 모집.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="specimen notice reveal" style="--d:0.00s" data-cat="avis">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Avis</p><p class="date">2026.11.06</p></div><span class="seal">공지</span></div>
+            <h3>숙성고 점검 휴무</h3>
+            <p>11월 24일(화)은 숙성고 정기 점검으로 매장을 쉽니다.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="specimen notice reveal" style="--d:0.08s" data-cat="arrivage">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Arrivage</p><p class="date">2026.11.03</p></div><span class="seal">입고</span></div>
+            <h3>Chevrotin 첫 입고</h3>
+            <p>봄 염소젖으로 만든 Chevrotin, 한정 수량으로 선보입니다.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <article class="specimen notice reveal" style="--d:0.16s" data-cat="evenement">
+          <div class="specimen__in">
+            <div class="top"><div><p class="eyebrow">Événement</p><p class="date">2026.10.31</p></div><span class="seal">이벤트</span></div>
+            <h3>La Lettre 구독 선물</h3>
+            <p>뉴스레터 신규 구독자께 작은 시식 박스를 드립니다.</p>
+            <a class="link-it" href="#">Lire l'avis <span class="arrow">→</span></a>
+          </div>
+        </article>
+        <p class="notices__empty"><span class="it" style="font-size:28px;display:block;color:var(--ink)">Aucun avis</span>검색 결과가 없습니다.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container index-split">
+      <div class="index-split__aside reveal">
+        <p class="eyebrow">Avis précédents</p>
+        <h2 class="display h-md">Avis Précédents</h2>
+        <p class="sub-kr">지난 소식</p>
+        <p class="body">지나간 공지와 입고 소식을 모았습니다.</p>
+        <img src="img/cheese-raclette.webp" alt="" loading="lazy">
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <ul class="ledger">
+          <li><a href="#"><span class="tag">Événement</span><span class="t">가을 시음회 후기</span><span class="dots"></span><span class="d">2026.10.27</span></a></li>
+          <li><a href="#"><span class="tag">Arrivage</span><span class="t">Raclette 시즌 시작</span><span class="dots"></span><span class="d">2026.10.20</span></a></li>
+          <li><a href="#"><span class="tag">Avis</span><span class="t">배송 포장 변경 안내</span><span class="dots"></span><span class="d">2026.10.13</span></a></li>
+          <li><a href="#"><span class="tag">Arrivage</span><span class="t">Tomme de Savoie 재입고</span><span class="dots"></span><span class="d">2026.10.06</span></a></li>
+          <li><a href="#"><span class="tag">Avis</span><span class="t">추석 연휴 휴무 안내</span><span class="dots"></span><span class="d">2026.09.18</span></a></li>
+          <li><a href="#"><span class="tag">Avis</span><span class="t">Grand Opening 안내</span><span class="dots"></span><span class="d">2026.09.01</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <nav class="pager reveal" aria-label="페이지">
+      <button class="pager__nav" type="button" data-dir="prev">‹ précédent</button>
+      <div class="pager__nums"><button type="button" class="is-active">I</button><span class="sep">·</span><button type="button">II</button><span class="sep">·</span><button type="button">III</button></div>
+      <button class="pager__nav" type="button" data-dir="next">suivant ›</button>
+    </nav>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand reveal">
+        <a href="index.html" aria-label="L'Affiné 홈"><img src="img/logo-light.svg" alt="L'Affiné" width="309" height="107"></a>
+        <p>Maison de Fromage · Depuis 1887</p>
+      </div>
+      <div class="footer__cols reveal" style="--d:.1s">
+        <div>
+          <h4>La Maison</h4>
+          <ul><li><a href="about.html">브랜드 이야기</a></li><li><a href="about.html#affineurs">숙성 장인</a></li><li><a href="about.html#cave">숙성고</a></li></ul>
+        </div>
+        <div>
+          <h4>La Boutique</h4>
+          <ul><li><a href="shop.html">서울 성동구 서울숲2길 18-7</a></li><li><a href="shop.html#horaires">화–토 11:00 – 20:00 · 일 ~18:00</a></li><li><a href="tel:02-1887-0811">02-1887-0811</a></li></ul>
+        </div>
+        <div>
+          <h4>Suivre</h4>
+          <ul><li><a href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="index.html#lettre">La Lettre 뉴스레터</a></li><li><a href="contact.html">문의하기</a></li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© L'Affiné — Portfolio project</p>
+      <p class="it">Imprimé à Séoul</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="맨 위로">
+  <svg class="ring" viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="29"/></svg>
+  <span class="lbl"><b>↑</b>haut</span>
+</button>
+<div class="toast" role="status" aria-live="polite"><span class="it">L'Affiné</span><span class="msg"></span></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

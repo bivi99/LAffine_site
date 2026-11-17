@@ -1,0 +1,123 @@
+/* ==========================================================================
+   L'Affiné — 로딩 페이지 (Grand Opening 달력 · 도장 · 연필 글씨)
+   index.html 에서만 사용합니다. 한 세션에 한 번만 재생됩니다.
+   ========================================================================== */
+
+/* Tritopani 폰트 : 설치돼 있으면 local()로, 배포 시엔 ./fonts/ 폴더에 파일을 넣어주세요 */
+@font-face {
+  font-family: "Tritopani";
+  src: local("Tritopani"), local("Tritopani Regular"), local("Tritopani-Regular"),
+       url("../fonts/Tritopani.woff2") format("woff2"),
+       url("../fonts/Tritopani.woff") format("woff"),
+       url("../fonts/Tritopani.otf") format("opentype"),
+       url("../fonts/Tritopani.ttf") format("truetype");
+  font-display: block;
+}
+
+:root {
+  --l-paper: #f5efe8;
+  --l-ink: #161616;
+  --l-muted: #777;
+  --l-grid: rgba(30, 30, 30, .78);
+
+  /* 1920×1080 시안 기준 단위 */
+  --u: min(1vw, 1.7778vh);
+  --cell: calc(38.5 * var(--u));
+  --tilt: -16deg;
+  --ox: calc(-13.2 * var(--u));
+  --oy: calc(-2.7 * var(--u));
+  --script: "Tritopani", "Mrs Saint Delafield", cursive;
+}
+@media (max-aspect-ratio: 1/1) {
+  :root { --u: 2.15vw; --ox: 0px; --oy: calc(-4 * var(--u)); }
+}
+
+html:not(.no-intro) body.page-main { overflow: hidden; }
+.no-intro #loader { display: none; }
+
+#loader {
+  position: fixed; inset: 0; z-index: 999;
+  overflow: hidden;
+  background-color: var(--l-paper);
+  cursor: pointer;
+}
+#loader::before, #loader::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 5; }
+#loader::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .36  0 0 0 0 .3  0 0 0 1.25 -.42'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: .42; mix-blend-mode: multiply;
+}
+#loader::after {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.004' numOctaves='3' seed='4'/><feColorMatrix values='0 0 0 0 .6  0 0 0 0 .55  0 0 0 0 .5  0 0 0 .9 -.35'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+  background-size: cover; opacity: .18; mix-blend-mode: multiply;
+}
+
+.plane {
+  position: absolute;
+  width: calc(var(--cell) * 7);
+  height: calc(var(--cell) * 6);
+  left: calc(50% + var(--ox) - var(--cell) * 1.5);
+  top:  calc(50% + var(--oy) - var(--cell) * 1.5);
+  transform-origin: calc(var(--cell) * 1.5) calc(var(--cell) * 1.5);
+  transform: rotate(var(--tilt));
+}
+.plane .grid { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+
+.plane .num {
+  position: absolute;
+  font-family: var(--script);
+  font-size: calc(4.4 * var(--u));
+  line-height: 1;
+  color: var(--l-muted);
+  white-space: nowrap;
+  opacity: 0;
+  transform: rotate(4deg);
+  user-select: none;
+}
+.plane .num.today { color: var(--l-ink); }
+
+.plane .stamp {
+  position: absolute;
+  width: calc(27.5 * var(--u));
+  left: calc(var(--cell) * 1.5 - 0.2 * var(--u));
+  top:  calc(var(--cell) * 1.5 - 2.4 * var(--u));
+  translate: -50% -50%;
+  rotate: 3deg;
+  opacity: 0;
+}
+.plane .stamp svg { display: block; width: 100%; height: auto; overflow: visible; }
+.plane .stamp .shadow {
+  position: absolute; inset: 8% 6%; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(60,30,20,.28), transparent);
+  filter: blur(calc(1.2 * var(--u)));
+  opacity: 0;
+}
+.plane .stamp .bleed { position: absolute; inset: 0; opacity: 0; filter: blur(2px); }
+
+.plane .write {
+  position: absolute;
+  left: calc(var(--cell) * 1.5 - 1.1 * var(--u));
+  top:  calc(var(--cell) * 1.5 + 13.5 * var(--u));
+  translate: -50% -50%;
+  rotate: -2deg;
+  font-family: var(--script);
+  font-size: calc(6.6667 * var(--u));
+  line-height: 1;
+  color: var(--l-ink);
+  white-space: nowrap;
+  filter: url(#graphite);
+  user-select: none;
+}
+.plane .write .ch { display: inline-block; clip-path: inset(-80% 140% -80% -40%); }
+.plane .write .sp { display: inline-block; width: .28em; }
+
+.loader__skip {
+  position: absolute; right: 32px; bottom: 28px; z-index: 6;
+  font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 14px; color: #8a7f72;
+  opacity: 0; animation: skipIn .8s 1.6s ease-out forwards;
+}
+@keyframes skipIn { to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .plane .grid, .plane .num, .plane .stamp { opacity: 1 !important; }
+  .plane .write .ch { clip-path: none !important; }
+}
